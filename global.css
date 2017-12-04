@@ -1,0 +1,226 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	
+	font-size: 14px;
+	font-family: Arial, sans-serif;
+	color: black;
+	
+	background-color: #FBF0EC;
+	background-image: url('img/wrap_backg_rose.png');
+	background-repeat: repeat-x;
+}
+
+img {
+	display: block;
+	border: 0px;
+}
+
+/* MIR = Mlarkey Image Replacement (http://www.stuffandnonsense.co.uk/archives/examples/malarkey-method-example.html) */
+.mir {
+	letter-spacing : -1000em;
+	clear: both;
+	background-repeat: no-repeat;
+}
+/* Just for Opera, but hide from MacIE */
+/*\*/html>body .mir { letter-spacing : normal; text-indent : -999em; overflow : hidden;}
+/* End of hack */
+
+a, a:link {
+	color: #B57069;
+	text-decoration: none;
+}
+p {
+	line-height: 150%;
+}
+h1, h2, h3, h4, em, blockquote {
+	font-family: Georgia, Times New Roman, serif;
+	font-weight: bold;
+	font-style: normal;
+}
+h1 {
+	font-size: 18px;
+}
+h2 {
+	font-size: 15px;
+}
+h3 {
+	font-size: 13px;
+}
+a:hover, a:active {
+	text-decoration: underline;
+}
+blockquote {
+	margin-left: 0px;
+	quotes: "\201E" "\201C" "\201A" "\2018";
+	font-weight: bold;
+}
+blockquote:before {
+	content:open-quote;
+}
+blockquote:after {
+	content:close-quote;
+}
+table, td, caption {
+	text-align: left;
+	vertical-align: top;
+	padding: 0px;
+	margin: 0px;
+}
+table.telefonsprechzeiten td.morgens {
+	padding-left: 8px;
+}
+table.telefonsprechzeiten td.tage {
+	width: 120px;
+}
+
+
+#wrap {
+	margin-left: auto;
+	margin-right: auto;
+	width: 740px;
+	text-align: left;
+	position: relative;
+	background-color: white;
+	
+}
+
+/* === header === */
+
+#header {
+	height: 202px;
+	background-color: white;
+	background-image: url('img/header_standard_rose.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#header h1 {
+	padding: 24px 0px 0px 24px;
+	width: 300px; /* 324px - padding */
+	margin: 0px;
+	float: left;
+}
+#header h1 a {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 130%;
+	color: black;
+}
+#header h1 a:hover {
+	text-decoration: none;
+}
+#header h1 a span.subtitel {
+	font-size: 15px;
+	letter-spacing: 0.8px; /* doesn't work in IE7 */
+}
+
+
+/* === menu === */
+
+ul#menu {
+	list-style-type: none;
+	margin: 0px auto 0px auto;
+	padding: 9px 0px 10px 0px;
+	background-color: #F6A27D;
+	text-align: center;
+}
+ul#menu li {
+	display: inline;
+}
+ul#menu li a {
+	font-weight: bold;
+	padding: 9px 10px 10px 10px;
+	color: black;
+}
+ul#menu li a:hover {
+	color: #F4D9CE;
+	text-decoration: none;
+}
+ul#menu li.active a, ul#menu li.active a:hover, ul#menu li a:active {
+	color: white;
+}
+
+
+/* === content === */
+
+#content {
+	padding: 60px 50px 200px 50px;
+}
+#content img {
+	width: 200px;
+	float: right;
+	margin: 0px 0px 20px 20px;
+}
+#content li {
+	line-height: 150%;
+}
+#content .column {
+	width: 290px;
+	padding-right: 30px;
+	float: left;
+}
+
+#content .psychotherapie, #content .psychotherapie a {
+	color: #283C9F;
+}
+#content .homoeopathie, #content .homoeopathie a {
+	color: #59933E;
+}
+
+
+/* ==== farben ====
+
+rose/default
+* blass  : #FBF0EC
+* mittel : #F4D9CE
+* menu   : #F6A27D
+
+blau/psychotherapie
+* blass  : #E3E8EE
+* mittel : #D2E8FD
+* menu   : #8CB3DC
+
+grün/homöpathie
+* blass  : #E9F9D4
+* mittel : #D6F3B0
+* menu   : #7CC949
+
+*/
+
+body.psychotherapie {
+	background-color: #E3E8EE;
+	background-image: url('img/wrap_backg_blau.png');
+}
+body.psychotherapie #header {
+	background-image: url('img/header_psychotherapie_blau.jpg');
+}
+body.psychotherapie #menu {
+	background-color: #8CB3DC;
+}
+body.psychotherapie #menu li a:hover {
+	color: #D2E8FD;
+}
+body.psychotherapie #menu li.active a:hover {
+	color: white;
+}
+
+body.homoeopathie {
+	background-color: #E9F9D4;
+	background-image: url('img/wrap_backg_gruen.png');
+}
+body.homoeopathie #header {
+	background-image: url('img/header_homoeopathie_gruen.jpg');
+}
+body.homoeopathie #menu {
+	background-color: #7CC949;
+}
+body.homoeopathie #menu li a:hover {
+	color: #D6F3B0;
+}
+body.homoeopathie #menu li.active a:hover {
+	color: white;
+}
+
+
+

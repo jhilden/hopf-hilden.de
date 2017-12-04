@@ -1,0 +1,81 @@
+/* ######## startseite / index ########## */
+
+#content #schriftzug-willkommen {
+	width: 194px;
+	height: 30px;
+	background-image: url('img/schriftzug-willkommen.jpg');
+}
+#content .mehr {
+	float: right;
+}
+body.index table.telefonsprechzeiten {
+	width: 420px;
+}
+
+/* ######## über mich ########## */
+
+#content #schriftzug-ueber_mich {
+	width: 166px;
+	height: 32px;
+	background-image: url('img/schriftzug-ueber_mich.jpg');
+}
+#content #schriftzug-mein_werdegang {
+	width: 184px;
+	height: 41px;
+	background-image: url('img/schriftzug-mein_werdegang.jpg');
+	clear: none;
+}
+#content #schriftzug-mein_therapeutischer_fingerabdruck {
+	width: 350px;
+	height: 43px;
+	background-image: url('img/schriftzug-mein_therapeutischer_fingerabdruck.jpg');
+	clear: none;
+}
+
+/* ######## homoeopathie ########## */
+
+#content #schriftzug-homoeopathie {
+	width: 155px;
+	height: 42px;
+	background-image: url('img/schriftzug-homoeopathie.jpg');
+	padding-bottom: 12px;
+}
+
+/* ######## psychotherapie ########## */
+
+#content #schriftzug-psychotherapie {
+	width: 206px;
+	height: 54px;
+	background-image: url('img/schriftzug-psychotherapie.jpg');
+}
+
+/* ######## kosten ########## */
+
+#content #schriftzug-kosten {
+	width: 122px;
+	height: 38px;
+	background-image: url('img/schriftzug-kosten.jpg');
+}
+
+/* ######## anfahrt ########## */
+
+#content #schriftzug-anfahrt {
+	width: 150px;
+	height: 43px;
+	background-image: url('img/schriftzug-anfahrt.jpg');
+}
+iframe {
+	border: 1px solid #B57069;
+}
+
+/* ######## kontakt ########## */
+
+#content #schriftzug-kontakt {
+	width: 164px;
+	height: 37px;
+	background-image: url('img/schriftzug-kontakt.jpg');
+	margin-bottom: 30px;
+}
+body.kontakt table.telefonsprechzeiten {
+	width: 640px;
+}
