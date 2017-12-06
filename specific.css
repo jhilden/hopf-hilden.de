@@ -8,9 +8,6 @@
 #content .mehr {
 	float: right;
 }
-body.index table.telefonsprechzeiten {
-	width: 420px;
-}
 
 /* ######## über mich ########## */
 
@@ -64,8 +61,10 @@ body.index table.telefonsprechzeiten {
 	height: 43px;
 	background-image: url('img/schriftzug-anfahrt.jpg');
 }
-iframe {
+iframe.googlemap {
 	border: 1px solid #B57069;
+	width: 100%;
+	height: 350px;
 }
 
 /* ######## kontakt ########## */
@@ -75,7 +74,4 @@ iframe {
 	height: 37px;
 	background-image: url('img/schriftzug-kontakt.jpg');
 	margin-bottom: 30px;
-}
-body.kontakt table.telefonsprechzeiten {
-	width: 640px;
 }

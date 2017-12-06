@@ -2,11 +2,9 @@ body {
 	padding: 0px;
 	margin: 0px;
 	text-align: center;
-	
 	font-size: 14px;
 	font-family: Arial, sans-serif;
 	color: black;
-	
 	background-color: #FBF0EC;
 	background-image: url('img/wrap_backg_rose.png');
 	background-repeat: repeat-x;
@@ -68,6 +66,9 @@ table, td, caption {
 	padding: 0px;
 	margin: 0px;
 }
+table.telefonsprechzeiten {
+	width: 100%;
+}
 table.telefonsprechzeiten td.morgens {
 	padding-left: 8px;
 }
@@ -79,21 +80,26 @@ table.telefonsprechzeiten td.tage {
 #wrap {
 	margin-left: auto;
 	margin-right: auto;
-	width: 740px;
+	max-width: 740px;
 	text-align: left;
 	position: relative;
 	background-color: white;
-	
 }
 
 /* === header === */
 
 #header {
-	height: 202px;
+	height: 130px;
 	background-color: white;
 	background-image: url('img/header_standard_rose.jpg');
-	background-position: center;
+	background-position: top -20px left;
 	background-repeat: no-repeat;
+}
+@media (min-width: 740px) {
+	#header {
+		height: 202px;
+		background-position: center center;
+	}
 }
 #header h1 {
 	padding: 24px 0px 0px 24px;
@@ -120,18 +126,19 @@ table.telefonsprechzeiten td.tage {
 
 ul#menu {
 	list-style-type: none;
-	margin: 0px auto 0px auto;
-	padding: 9px 0px 10px 0px;
+	margin: 0;
+	padding: 0;
 	background-color: #F6A27D;
 	text-align: center;
 }
 ul#menu li {
-	display: inline;
+	display: inline-block;
 }
 ul#menu li a {
 	font-weight: bold;
 	padding: 9px 10px 10px 10px;
 	color: black;
+	display: inline-block;
 }
 ul#menu li a:hover {
 	color: #F4D9CE;
@@ -145,7 +152,12 @@ ul#menu li.active a, ul#menu li.active a:hover, ul#menu li a:active {
 /* === content === */
 
 #content {
-	padding: 60px 50px 200px 50px;
+		padding: 20px 30px;
+	}
+@media (min-width: 740px) {
+	#content {
+		padding: 60px 50px 200px 50px;
+	}
 }
 #content img {
 	width: 200px;
