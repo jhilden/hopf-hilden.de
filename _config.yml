@@ -5,6 +5,8 @@ description: Dr. med. Christa Hopf-Hilden, Hom√∂opathie und Psychotherapie in M√
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.dr.hopf-hilden.de/"
 markdown: kramdown
+sass:
+  style: compressed
 exclude:
   - Gemfile
   - Gemfile.lock
