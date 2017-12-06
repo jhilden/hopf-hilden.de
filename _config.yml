@@ -1,0 +1,14 @@
+encoding: "utf-8"
+title: Your awesome title
+email: hopf-hilden@web.de
+description: Dr. med. Christa Hopf-Hilden, Homöopathie und Psychotherapie in Münster
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.dr.hopf-hilden.de/"
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+defaults:
+-
+  values:
+    layout: 'default'
