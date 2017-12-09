@@ -10,6 +10,8 @@ sass:
 exclude:
   - Gemfile
   - Gemfile.lock
+include:
+  - _redirects
 defaults:
 -
   values:
