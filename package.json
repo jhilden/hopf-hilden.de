@@ -1,0 +1,15 @@
+{
+  "name": "dr.hopf-hilden.de",
+  "version": "1.0.0",
+  "description": "Source for http://www.dr.hopf-hilden.de/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhilden/hopf-hilden.de.git"
+  },
+  "author": "jakobhilden@gmail.com",
+  "private": true,
+  "homepage": "https://github.com/jhilden/hopf-hilden.de#readme",
+  "dependencies": {
+    "leaflet": "^1.6.0"
+  }
+}

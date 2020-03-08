@@ -8,7 +8,28 @@ key: "anfahrt"
 
 <h3>Lageplan</h3>
 
-<iframe class="googlemap" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.de/maps?f=q&amp;hl=de&amp;geocode=&amp;q=in+der+weede+4+muenster&amp;sll=52.147135,7.340226&amp;sspn=0.009309,0.027895&amp;ie=UTF8&amp;ll=51.928019,7.528124&amp;spn=0.009356,0.027895&amp;z=14&amp;iwloc=addr&amp;output=embed&amp;s=AARTsJobRQew7ZKJRUXTUsZEZooER6OuGQ"></iframe><br /><small><a href="http://maps.google.de/maps?f=q&amp;hl=de&amp;geocode=&amp;q=in+der+weede+4+muenster&amp;sll=52.147135,7.340226&amp;sspn=0.009309,0.027895&amp;ie=UTF8&amp;ll=51.928019,7.528124&amp;spn=0.009356,0.027895&amp;z=14&amp;iwloc=addr&amp;source=embed" style="text-align:left">Größere Kartenansicht</a></small>
+<div id="lageplan" class="lageplan"></div>
+<link rel="stylesheet" href="/css/leaflet.css">
+<script src="/javascript/leaflet.js"></script>
+<script>
+  var coordinates = [51.920366, 7.524614]
+  var zoom = 15;
+  var lageplan = L.map('lageplan').setView(coordinates, zoom);
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'pk.eyJ1IjoiamFrb2JoaWxkZW4iLCJhIjoiY2s3ajgzenYxMDNhbTNmcTg4a2Zqd2l0byJ9.7MrGTn18AcPS-7OUyVoYbw'
+  }).addTo(lageplan);
+  var praxis = L.marker(coordinates).addTo(lageplan);
+  praxis.bindPopup("<strong>Dr. med. Christa Hopf-Hilden</strong><br />Privatpraxis für Psychotherapie & Homöopthie<br />In der Weede 4<br />48163 Münster-Albachten<br /><a href='https://goo.gl/maps/ZV6Q911y8nYB9hES9' target='_blank'>In Google Maps öffnen</a>").openPopup();
+</script>
+
+<p>
+  In der Weede 4<br />
+  48163 Münster-Albachten
+</p>
+
 <br />
 
 <h2>Wegbeschreibung</h2>
