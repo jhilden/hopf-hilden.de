@@ -2,6 +2,7 @@
 title: "Anfahrt"
 key: "anfahrt"
 ---
+
 <h1 id="schriftzug-anfahrt" class="mir">Anfahrt</h1>
 
 <h2 class="homoeopathie">Privatpraxis in Münster-Albachten</h2>
@@ -9,22 +10,31 @@ key: "anfahrt"
 <h3>Lageplan</h3>
 
 <div id="lageplan" class="lageplan"></div>
-<link rel="stylesheet" href="/css/leaflet.css">
+<link rel="stylesheet" href="/css/leaflet.css" />
 <script src="/javascript/leaflet.js"></script>
 <script>
-  var coordinates = [51.920366, 7.524614]
+  var coordinates = [51.920366, 7.524614];
   var zoom = 15;
-  var lageplan = L.map('lageplan').setView(coordinates, zoom);
-  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    attribution: '© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> <strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong>',
-    maxZoom: 18,
-    zoomOffset: -1,
-    tileSize: 512,
-    id: 'mapbox/streets-v11',
-    accessToken: 'pk.eyJ1IjoiamFrb2JoaWxkZW4iLCJhIjoiY2s3ajgzenYxMDNhbTNmcTg4a2Zqd2l0byJ9.7MrGTn18AcPS-7OUyVoYbw'
-  }).addTo(lageplan);
+  var lageplan = L.map("lageplan").setView(coordinates, zoom);
+  L.tileLayer(
+    "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
+    {
+      attribution:
+        '© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> <strong><a href="https://www.mapbox.com/map-feedback/" target="_blank">Improve this map</a></strong>',
+      maxZoom: 18,
+      zoomOffset: -1,
+      tileSize: 512,
+      id: "mapbox/streets-v11",
+      accessToken:
+        "pk.eyJ1IjoiamFrb2JoaWxkZW4iLCJhIjoiY2s3ajgzenYxMDNhbTNmcTg4a2Zqd2l0byJ9.7MrGTn18AcPS-7OUyVoYbw",
+    }
+  ).addTo(lageplan);
   var praxis = L.marker(coordinates).addTo(lageplan);
-  praxis.bindPopup("<strong>Dr. med. Christa Hopf-Hilden</strong><br />Privatpraxis für Psychotherapie & Homöopthie<br />In der Weede 4<br />48163 Münster-Albachten<br /><a href='https://goo.gl/maps/ZV6Q911y8nYB9hES9' target='_blank'>In Google Maps öffnen</a>").openPopup();
+  praxis
+    .bindPopup(
+      "<strong>Dr. med. Christa Hopf-Hilden</strong><br />Privatpraxis für Psychotherapie & Homöopathie<br />In der Weede 4<br />48163 Münster-Albachten<br /><a href='https://goo.gl/maps/ZV6Q911y8nYB9hES9' target='_blank'>In Google Maps öffnen</a>"
+    )
+    .openPopup();
 </script>
 
 <p>
@@ -36,24 +46,35 @@ key: "anfahrt"
 
 <h2>Wegbeschreibung</h2>
 
-<p><strong>Mit dem Auto von Münster:</strong><br />
-Weselerstrasse stadtauswärts,<br />
-direkt hinter dem Ortsschild Albachten vor der Kirche an Ampel links in die Osthofstrasse,<br />
-an der zweiten Bedarfsampel (oder der zweiten Bushaltestelle) rechts in "Am Kämpken",<br />
-Stichstrasse "Am Kämpken" bis zum Ende,<br />
-mündet rechts auf "In der Weede",<br />
-hier parken und erstes Gässchen auf der rechten Seite nehmen (Pfahl mit Nummer 2-8),<br />
-die Praxis hat die Hausnummer 4</p>
+<p>
+  <strong>Mit dem Auto von Münster:</strong><br />
+  Weselerstrasse stadtauswärts,<br />
+  direkt hinter dem Ortsschild Albachten vor der Kirche an Ampel links in die
+  Osthofstrasse,<br />
+  an der zweiten Bedarfsampel (oder der zweiten Bushaltestelle) rechts in "Am
+  Kämpken",<br />
+  Stichstrasse "Am Kämpken" bis zum Ende,<br />
+  mündet rechts auf "In der Weede",<br />
+  hier parken und erstes Gässchen auf der rechten Seite nehmen (Pfahl mit Nummer
+  2-8),<br />
+  die Praxis hat die Hausnummer 4
+</p>
 
-<p><strong>Mit dem Auto von Westen:</strong><br />
-Autobhan A43 Abfahrt Senden,<br />
-Richtung Havixbeck,<br />
-bei Möbel Hardeck Ampelkreuzung rechts Richtung Münster,<br />
-in Albachten hinter der Kirche rechts in die Osthofstrasse,
-weiter siehe oben</p>
+<p>
+  <strong>Mit dem Auto von Westen:</strong><br />
+  Autobhan A43 Abfahrt Senden,<br />
+  Richtung Havixbeck,<br />
+  bei Möbel Hardeck Ampelkreuzung rechts Richtung Münster,<br />
+  in Albachten hinter der Kirche rechts in die Osthofstrasse, weiter siehe oben
+</p>
 
-<p><strong>Wichtig für Navigationsgeräte:</strong><br /> Es kann von Vorteil sein "Am Kämpken" statt "In der Weede" einzugeben, da Sie sonst teilweise labyrinthartig durch "In der Weede" geleitet werden.</p>
+<p>
+  <strong>Wichtig für Navigationsgeräte:</strong><br />
+  Es kann von Vorteil sein "Am Kämpken" statt "In der Weede" einzugeben, da Sie
+  sonst teilweise labyrinthartig durch "In der Weede" geleitet werden.
+</p>
 
-<p><strong>Mit dem Bus von Münster:</strong><br />
-Buslinie 15 alle 20 Minuten, Haltestelle "Am Kämpken"</p>
-
+<p>
+  <strong>Mit dem Bus von Münster:</strong><br />
+  Buslinie 15 alle 20 Minuten, Haltestelle "Am Kämpken"
+</p>
